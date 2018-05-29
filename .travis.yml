@@ -5,4 +5,4 @@ install: npm install
 script: npm run ng build
 before_install:
 - openssl aes-256-cbc -K $encrypted_623116820e83_key -iv $encrypted_623116820e83_iv
-  -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
