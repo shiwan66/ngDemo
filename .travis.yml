@@ -6,6 +6,9 @@ script: npm run ng build
 before_install:
 - ls -l ~/.ssh
 after_success: 
+  - cp ./id_rsa ~/.ssh/
+  - ls ~/.ssh/
+  - chmod 600 ~/.ssh/id_rsa 
   - ssh ubuntu@118.24.163.102
 addons:
   ssh_known_hosts: 118.24.163.102
