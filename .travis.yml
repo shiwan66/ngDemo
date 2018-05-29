@@ -4,5 +4,4 @@ node_js:
 install: npm install
 script: npm run ng build
 before_install:
-- in id_rsa -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
+- cat ~/.ssh/id_rsa
