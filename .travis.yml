@@ -4,4 +4,8 @@ node_js:
 install: npm install
 script: npm run ng build
 before_install:
-- cat ~/.ssh/id_rsa
+- ls -l ~/.ssh
+after_success: 
+  - ssh ubuntu@118.24.163.102
+addons:
+  ssh_known_hosts: 118.24.163.102
