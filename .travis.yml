@@ -6,6 +6,3 @@ script: npm run ng build
 before_install:
 - openssl aes-256-cbc -K $encrypted_2ecf2bfca09a_key -iv $encrypted_2ecf2bfca09a_iv
   -in id_rsa.enc -out ~\/shh/id_rsa -d
-- ls -al ~/.ssh
-- sudo openssl aes-256-cbc -K $encrypted_623116820e83_key -iv $encrypted_623116820e83_iv
-  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
